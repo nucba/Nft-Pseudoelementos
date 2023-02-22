@@ -1,0 +1,40 @@
+/* EN STYLES.CSS */
+
+.cart-icon {
+  .cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: 1rem;
+    font-size: 18px;
+    color: var(--text-white);
+    cursor: pointer;
+  }
+}
+
+/* Vamos a cambiar la animación del carrito, en lugar de que aparezca con display, aparecerá con translate*/
+
+/*carrito*/
+.cart {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  background: linear-gradient(to top, #121e3c, var(--background));
+  border-left: 1px solid var(--nav-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  z-index: 2;
+  /* display: none; Esto se va*/
+  transform: translate(200%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+/*Toggle del carro*/
+
+#cart-toggle:checked + .cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}

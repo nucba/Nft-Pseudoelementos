@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- AGREGAMOS FAVICON (HACERLO AL FINAL DE LA CLASE) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png" />
+
+
+    <!-- AGREGAMOS PSEUDOELEMENTOS.CSS -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/pseudoelementos.css" />
+
+
+    <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="Logo de Nucba NFT" class="logo" />
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+            </label>
+            <input type="checkbox" id="menu-toggle" />
+
+            <!-- ACA AGREGAMOS LOS ENLACES EN LOS HREF-->
+            <ul class="navbar-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#discover">Descubre</a></li>
+                <li><a href="#products">BTC</a></li>
+
+                <!-- LAS DOS SIGUIENTES VAN A SER LINKS EXTERNOS, LES AGREGAMOS EL TARGET _BLANK -->
+                <li>
+                    <a href="https://www.youtube.com/c/Nucbaok" target="_blank">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://nucba.com.ar/" target="_blank">Conocenos</a>
+                </li>
+            </ul>
+            <!-- /*REEMPLAZAMOS LA IMAGEN POR EL ICONO DE FONT-AWESOME*/ -->
+            <label for="cart-toggle" class="cart-label">
+                <!-- <img src="./assets/img/cart-icon.svg" alt="Carrito de compras" class="cart-icon" />
+             -->
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </label>
+
+            <input type="checkbox" id="cart-toggle" />
+
+            <!-- EL CARRITO NO SE VA A TOCAR PERO LO PONEMOS ACA PARA TENER REFERENCIA DE DONDE COLOCAR EL OVERLAY -->
+            <div class="cart">
+                <h2>Tus NFTs</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>18.3 ETH</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+            <!-- AGREGAMOS UN DIV VACIO DE CLASE OVERLAY PARA EFECTO GLASS AL ABRIR MENU HAMBURGUESA Y CARRITO -->
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+
+
+    <section id="hero">
+        <div class="hero-info">
+            <!-- AGREGAMOS UN SPAN QUE RODEE LA PALABRA CRYPTO PARA HACER EL EFECTO DE TYPEWRITER -->
+            <h1>Descubre la nueva era de <span>Crypto</span></h1>
+        </div>
+
+
+
+</body>
+
+</html>
